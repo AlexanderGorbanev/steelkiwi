@@ -1,0 +1,253 @@
+/*Responsive grid special for SteelKiwi Test Project by Alexander Gorbanev*/
+
+.fixContainer {
+    width: 1200px;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+}
+.fullContainer {
+    width: 100%;
+    display: block;
+}
+.fixContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.fullContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.grid-pad {
+    padding: 20px 0 20px 20px;
+}
+.txt-l {
+    text-align: left;
+}
+.txt-c {
+    text-align: center;
+}
+.txt-r {
+    text-align: right;
+}
+.block-c {
+    margin: 0 auto;
+}
+.el-block {
+    display: block;
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Large  display*/
+
+.fixContainer {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+}
+.l-1 {
+    width: 8.33%;
+}
+.l-2 {
+    width: 16.66%;
+}
+.l-3 {
+    width: 24.99%;
+}
+.l-4 {
+    width: 33.33%;
+}
+.l-5 {
+    width: 41.66%;
+}
+.l-6 {
+    width: 50%;
+}
+.l-7 {
+    width: 58.33%;
+}
+.l-8 {
+    width: 66.66%;
+}
+.l-9 {
+    width: 74.99%;
+}
+.l-10 {
+    width: 83.33%;
+}
+.l-11 {
+    width: 91.74%;
+}
+.l-12 {
+    width: 100%;
+}
+
+/* [class*='l-'] {
+  padding-right: 20px;
+} */
+
+
+/* [class*='l-']:last-of-type {
+  padding-right: 0;
+} */
+
+.grid-pad>[class*='l-']:last-of-type {
+    padding-right: 20px;
+}
+[class*='l-'] {
+    float: left;
+}
+[class*='txt-c'] {
+    text-align: center;
+}
+@media screen and (min-width: 992px) and (max-width: 4200px) {
+    .hide-l {
+        display: none;
+    }
+}
+
+/*END Large display*/
+
+
+/*Medium  display*/
+
+@media screen and (min-width: 770px) and (max-width: 992px) {
+    .fixContainer {
+        max-width: 970px;
+        width: 100%;
+        padding: 0 15px;
+        display: block;
+        margin: 0 auto;
+    }
+    .m-1 {
+        width: 8.33%;
+    }
+    .m-2 {
+        width: 16.66%;
+    }
+    .m-3 {
+        width: 24.99%;
+    }
+    .m-4 {
+        width: 33.33%;
+    }
+    .m-5 {
+        width: 41.66%;
+    }
+    .m-6 {
+        width: 50%;
+    }
+    .m-7 {
+        width: 58.33%;
+    }
+    .m-8 {
+        width: 66.66%;
+    }
+    .m-9 {
+        width: 74.99%;
+    }
+    .m-10 {
+        width: 83.33%;
+    }
+    .m-11 {
+        width: 91.74%;
+    }
+    .m-12 {
+        width: 100%;
+    }
+    .hide-m {
+        display: none;
+    }
+    /* [class*='m-'] {
+  padding-right: 20px;
+}
+[class*='m-']:last-of-type {
+  padding-right: 0;
+} */
+    .grid-pad>[class*='m-']:last-of-type {
+        padding-right: 20px;
+    }
+    [class*='m-'] {
+        float: left;
+    }
+}
+
+/*END Medium  display*/
+
+
+/*Small  display*/
+
+@media screen and (min-width: 320px) and (max-width: 769px) {
+    .fixContainer {
+        max-width: 750px;
+        width: 100%;
+        padding: 0 15px;
+        display: block;
+        margin: 0 auto;
+    }
+    .s-1 {
+        width: 8.33%;
+    }
+    .s-2 {
+        width: 16.66%;
+    }
+    .s-3 {
+        width: 24.99%;
+    }
+    .s-4 {
+        width: 33.33%;
+    }
+    .s-5 {
+        width: 41.66%;
+    }
+    .s-6 {
+        width: 50%;
+    }
+    .s-7 {
+        width: 58.33%;
+    }
+    .s-8 {
+        width: 66.66%;
+    }
+    .s-9 {
+        width: 74.99%;
+    }
+    .s-10 {
+        width: 83.33%;
+    }
+    .s-11 {
+        width: 91.74%;
+    }
+    .s-12 {
+        width: 100%;
+    }
+    .hide-s {
+        display: none;
+    }
+    /* [class*='s-'] {
+  padding-right: 20px;
+}
+[class*='s-']:last-of-type {
+  padding-right: 0;
+} */
+    .grid-pad>[class*='s-']:last-of-type {
+        padding-right: 20px;
+    }
+    [class*='s-'] {
+        float: left;
+    }
+}
+
+/*END Small display*/

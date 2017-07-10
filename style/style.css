@@ -1,0 +1,1149 @@
+    @font-face {
+    font-family: 'c1';
+    src: url(../fonts/TextCondPro.ttf);
+}
+@font-face {
+    font-family: 'c2';
+    src: url(../fonts/conproThinItalic.ttf);
+}
+@font-face {
+    font-family: 'c3';
+    src: url(../fonts/conproLightItalic.ttf);
+}
+@font-face {
+    font-family: 'c4';
+    src: url(../fonts/condpro-regular-webfont.ttf);
+}
+@font-face {
+    font-family: 'c5';
+    src: url(../fonts/condpro-medium-webfont.ttf);
+}
+@font-face {
+    font-family: 'c6';
+    src: url(../fonts/condpro-light-webfont.ttf);
+}
+@font-face {
+    font-family: 'c7';
+    src: url(../fonts/condpro-bold-webfont.ttf);
+}
+body {
+    overflow-x: hidden;
+    font-family: 'c4';
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+a:hover {
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+img.generalLogo {
+    width: 100%;
+    max-width: 330px;
+}
+.generalButt {
+    background-color: #ff8400;
+    width: 210px;
+    float: none;
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    font-family: c6;
+    text-align: center;
+}
+.generalButt:hover {
+    background-color: #ff4e00;
+}
+.contentButt {
+    display: block;
+    max-width: 195px;
+}
+.topContact {
+    min-height: 185px;
+    padding: 29px 0;
+}
+.addressTop p {
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.addressTop {
+    padding-top: 30px;
+}
+.headerTel {
+    font-size: 30px;
+    font-family: c5;
+    color: black;
+    margin-bottom: 15px;
+}
+.telephoneBlockTop {
+    padding-top: 25px;
+}
+
+/*navigation*/
+
+.navigation input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.navigation label {
+    display: none;
+    cursor: pointer;
+    user-select: none;
+}
+nav[role="custom-dropdown"] {
+    background-color: #ff8400;
+    position: relative;
+    width: 100%;
+}
+nav[role="custom-dropdown"] label {
+    color: #fff;
+    background-color: #ff8400;
+    text-decoration: none;
+    font: 1.4em sans-serif;
+    transition: color .3s ease-in-out;
+}
+nav[role="custom-dropdown"] ul {
+    background-color: #ff8400;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+}
+nav[role="custom-dropdown"] ul>li {
+    display: inline-block;
+    padding: 18.5px 0 18.5px 20px;
+    width: auto;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+}
+nav[role="custom-dropdown"] ul>li:hover>a {
+    color: #fff;
+}
+nav[role="custom-dropdown"] ul>li:hover a.menuLink {
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+a.menuLink {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    font-family: c6;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+a.menuLink:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+.navigation ul li:after {
+    content: '•';
+    color: white;
+    padding-left: 15px;
+}
+.navigation ul li:last-child:after {
+    color: transparent;
+}
+
+/*end navigation*/
+
+
+/*top section*/
+.topSlider {
+    position: relative;
+}
+.topBanner {
+    position: absolute;
+    z-index: 500;
+    top: 40%;
+}
+section#firstSection {
+    /* padding-top: 180px;
+    padding-bottom: 0px;
+    background-image: url(..//img/top_back.jpg); */
+    background-size: cover;
+    background-position: 0 50%;
+    border-bottom: 4px solid #ff8400;
+}
+/*top slider*/
+.item.topSliderItem {
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    overflow: hidden;
+    width: 320px;
+    height: 450px;
+    border-right: 3px solid white;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 800px;
+    min-height: 450px;
+    max-width: 500px;
+    -webkit-transform: skewX(15deg);
+    -moz-transform: skewX(15deg);
+    -ms-transform: skewX(15deg);
+    -o-transform: skewX(15deg);
+    transform: skewX(15deg);
+    margin-left: -80px;
+}
+/*end top slider*/
+.formContainer {
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto;
+}
+.transformBlock {
+    margin: 0 auto;
+    max-width: 860px;
+    width: 100%;
+    color: white;
+    font-size: 2m;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+.topForm {
+    font-size: 2m;
+    color: black;
+    padding: 3% 2% 3% 4%;
+    -webkit-transform: skewX(15deg);
+    -moz-transform: skewX(15deg);
+    -ms-transform: skewX(15deg);
+    -o-transform: skewX(15deg);
+    transform: skewX(15deg);
+}
+h3.formTitle {
+    font-size: 34px;
+    font-family: c6;
+    text-transform: uppercase;
+    margin: 0;
+}
+p.formTxt {
+    font-family: c4;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.IamAgree {
+    position: relative;
+}
+input.inputStyle {
+    width: 195px;
+    height: 45px;
+    border: 2px solid black;
+    color: black;
+    padding: 0 10px;
+    font-size: 20px;
+    font-family: c4;
+    text-transform: uppercase;
+}
+.submitButtonStyle {
+    width: 195px;
+    height: 45px;
+    background-color: #f39d3f;
+    border: none;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: c5;
+    font-weight: 600;
+    position: absolute;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+.submitButtonStyle:hover {
+    background-color: #ff4e00;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+label.checkboxStyle i {
+    color: black;
+    padding: 5.5px;
+}
+label.checkboxStyle {
+    background-color: white;
+    border: 1.5px solid black;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+label.checkboxStyle {
+    background-color: white;
+    border: 1.5px solid black;
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    display: inline-block;
+}
+label.checkboxStyle input {
+    display: none;
+}
+.checkButton {
+    opacity: 0;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: box-shadow, color;
+}
+.checkButton.active {
+    opacity: 1;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: box-shadow, color;
+}
+p.formDescription {
+    text-align: right;
+    color: white;
+    font-size: 16px;
+}
+.formDescription a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+}
+
+/*end top section*/
+
+
+/*second section*/
+
+section#secondSection {
+    padding-top: 60px;
+    overflow: hidden;
+}
+.certificateBlock img {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+.servicesTxt {
+    max-width: 70%;
+    padding-left: 20px;
+}
+.servicesTxt h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 0;
+}
+h3.certificateTxt {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+h3.sliderTxt {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 110px;
+    margin-bottom: 90px;
+}
+.servicesBlock img {
+    width: 100%;
+    max-width: 195px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #d4d4d4;
+}
+.servicesBlock {
+    margin-bottom: 50px;
+}
+.servicesTxt p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+/*CERTIFICATE POPUP*/
+
+.popup-container {
+    margin: 0px auto;
+}
+.popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 99999;
+    top: 0px;
+    left: 0;
+    display: none;
+}
+.popup .popup-content {
+    height: 100vh;
+    box-shadow: 0px 0px 20px #000;
+}
+.popup-content a img {
+    height: 60vh;
+    width: auto;
+    margin-top: 15vh;
+}
+.popup-content i {
+    font-size: 28px;
+    position: absolute;
+    color: white;
+    padding: 10px;
+    margin-top: 13vh;
+    cursor: pointer;
+}
+.popup-content i:hover {
+    color: orange;
+}
+.popup-containerM {
+    margin: 0px auto;
+}
+.popupM {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 99999;
+    left: 0;
+    display: none;
+}
+.popupM .popup-contentM {
+    height: 100vh;
+    box-shadow: 0px 0px 20px #000;
+}
+.popup-contentM a img {
+    height: 60vh;
+    width: auto;
+    margin-top: 15vh;
+}
+.popup-contentM i {
+    font-size: 22px;
+    position: absolute;
+    color: white;
+    padding: 10px;
+    margin-top: 13vh;
+    cursor: pointer;
+}
+.popup-contentM i:hover {
+    color: orange;
+}
+/*END POPUP*/
+
+
+/*Slider*/
+
+#Slider {
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    max-width: 260px;
+}
+#Slider .item {
+    display: none;
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+    
+}
+#Slider .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #d4d4d4;
+}
+#Slider .item.active {
+    display: block;
+}
+#Slider .arrow {
+    position: absolute;
+    color: #ff8400;
+    text-decoration: none;
+    font-size: 45px;
+    left: calc(50% - 13px);
+}
+#Slider .arrow.prev {
+    top: -60px;
+}
+#Slider .arrow.next {
+    bottom: -20px;
+}
+#Slider .arrow:hover {
+    color: #ff4e00;
+}
+
+#SliderM {
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 210px;
+}
+#SliderM .item {
+    display: none;
+    text-align: center;
+    height: 260px;
+    overflow: hidden;
+}
+#SliderM .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #d4d4d4;
+}
+#SliderM .item.active {
+    display: block;
+}
+#SliderM .arrow {
+    position: absolute;
+    color: #ff8400;
+    text-decoration: none;
+    font-size: 45px;
+    left: calc(50% - 13px);
+}
+#SliderM .arrow.prev {
+    left: -45px;
+    top: 80px;
+}
+#SliderM .arrow.next {
+    right: -70px;
+    top: 80px;
+}
+#SliderM .arrow:hover {
+    color: #ff4e00;
+}
+
+/*End Slider*/
+
+
+/*end second section*/
+
+
+/*third section*/
+
+.topCustomerBlock {
+    background-color: #fdc029;
+    padding-top: 45px;
+}
+h3.customerTitle {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: c6;
+    margin: 0;
+}
+p.customerTxt {
+    font-size: 22px;
+    font-family: c3;
+    margin-top: 20px;
+}
+.topCustomerBlock ul {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+}
+.topCustomerBlock ul li {
+    display: inline-block;
+    padding: 18.5px 0;
+    width: 24%;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+li.customerTab.active a {
+    font-family: c5;
+}
+.topCustomerBlock ul li a {
+    color: black;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: c4;
+    text-align: center;
+}
+.topCustomerBlock ul li:hover a {
+    font-family: c5;
+}
+.customerTabs ul li.customerTab.active a:after {
+    border-top-color: #cccccc;
+}
+.customerTabs ul li.customerTab.active a:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-top: 25px solid #fdc029;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    margin-left: -25px;
+}
+.customerLogoTab {
+    display: none;
+}
+.customerLogoTab.active {
+    display: block;
+    padding-left: 50px;
+}
+img.customerLogo {
+    width: 100%;
+}
+.bottomCustomerBlock {
+    padding: 40px;
+}
+
+/*accordeon*/
+
+.mobileCustomerLogoTab {
+    display: none;
+}
+.mobileCustomerLogoTab.active {
+    display: block;
+}
+.openAccordeon {
+    float: right;
+    margin-right: 15px;
+}
+a.mobileButtonTab {
+    padding-left: 15px;
+}
+
+/*end accordeon*/
+
+
+/*End third section*/
+
+
+/*Footer*/
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+}
+footer p {
+    color: white;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+a.footerLink {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.footerNav {
+    padding-top: 15px;
+}
+.writeMail {
+    text-transform: uppercase;
+}
+
+/*End Footer*/
+
+/*404 page*/
+section#errorPage {
+    height: calc(100vh - 353px);
+}
+.errorNumber {
+    font-family: c4;
+    font-size: 180px;
+    margin-bottom: 50px;
+    margin-top: 10%;
+}
+p.errorDescription {
+    font-size: 36px;
+    font-family: c3;
+    margin: 0;
+}
+/*end 404*/
+
+@media screen and (max-width: 1054px) {
+    a.menuLink {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        border-bottom: 2px solid transparent;
+        font-family: c5;
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    nav[role="custom-dropdown"] ul>li {
+        display: inline-block;
+        padding: 18.5px 0 18.5px 5px;
+        width: auto;
+        margin: 0;
+        text-align: center;
+        cursor: pointer;
+    }
+    .navigation ul li:after {
+        content: '•';
+        color: white;
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 948px) {
+    .transformBlock {
+        margin: 0 auto;
+        max-width: 860px;
+        width: 100%;
+        color: white;
+        font-size: 2m;
+        background-color: rgba(255, 255, 255, 0.7);
+        -webkit-transform: skewX(-15deg);
+        -moz-transform: skewX(-15deg);
+        -ms-transform: skewX(-15deg);
+        -o-transform: skewX(-15deg);
+        transform: skewX(0deg);
+    }
+    .topForm {
+        font-size: 2m;
+        color: black;
+        padding: 3%;
+        -webkit-transform: skewX(15deg);
+        -moz-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        -o-transform: skewX(15deg);
+        transform: skewX(0deg);
+    }
+    .generalButt {
+        background-color: #ff8400;
+        width: 180px;
+        float: none;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 10px 0px;
+        font-family: c5;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 855px) {
+    input.inputStyle {
+        width: auto;
+        height: 45px;
+        border: 2px solid black;
+        color: black;
+        padding: 0 10px;
+        font-size: 20px;
+        font-family: c4;
+        text-transform: uppercase;
+    }
+    .submitButtonStyle {
+        width: auto;
+        height: 45px;
+        background-color: #f39d3f;
+        border: none;
+        margin-left: 5px;
+        font-size: 20px;
+        font-family: c5;
+        font-weight: 600;
+        position: absolute;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: all;
+    }
+    h3.formTitle {
+        font-size: 28px;
+        font-family: c5;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    p.formTxt {
+        font-family: c5;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .servicesTxt h3 {
+        text-transform: uppercase;
+        font-size: 26px;
+        margin-top: 0;
+    }
+    h3.certificateTxt {
+        text-align: left;
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+    h3.sliderTxt {
+        text-align: left;
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-top: 55px;
+        margin-bottom: 90px;
+    }
+    h3.customerTitle {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: c6;
+        margin: 0;
+    }
+    p.customerTxt {
+        font-size: 22px;
+        font-family: c2;
+        margin-top: 20px;
+    }
+    .topCustomerBlock ul li a {
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: c4;
+        text-align: center;
+    }
+    @media screen and (max-width: 770px) {
+        input.inputStyle {
+            width: auto;
+            width: 24%;
+            height: 45px;
+            border: 2px solid black;
+            color: black;
+            padding: 0 10px;
+            font-size: 20px;
+            font-family: c4;
+            text-transform: uppercase;
+        }
+        #SliderM .arrow {
+            position: absolute;
+            color: #ff8400;
+            text-decoration: none;
+            font-size: 45px;
+            top: calc(50% - 38px);
+            left: 100%;
+        }
+        #SliderM .arrow.prev {
+            left: -45px;
+            top: 80px;
+        }
+        #SliderM .arrow.next {
+            right: -70px;
+            top: 80px;
+        }
+        h3.sliderTxt {
+            font-size: 28px;
+            text-transform: uppercase;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .servicesTxt {
+            max-width: 100%;
+            padding-left: 0;
+        }
+        .headerTel {
+            font-size: 22px;
+            font-family: c5;
+            color: black;
+            margin-bottom: 15px;
+        }
+        .telephoneBlockTop .generalButt {
+            background-color: #ff8400;
+            width: 148px;
+            float: none;
+            color: white;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 10px 0px;
+            font-family: c5;
+            text-align: center;
+        }
+        .generalButt {
+            background-color: #ff8400;
+            width: 180px;
+            float: none;
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px 0px;
+            font-family: c5;
+            text-align: center;
+        }
+        .contentButt {
+            display: block;
+            max-width: 200px;
+        }
+        .servicesTxt h3 {
+            text-transform: uppercase;
+            font-size: 30px;
+            margin-top: 0;
+        }
+        .servicesTxt p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            font-family: c4;
+            margin-top: 0;
+        }
+        .fullContainer.topCustomerBlock .fixContainer {
+            width: 100%;
+            padding: 0;
+        }
+        .mobileCustomerTab {
+            border-top: 1px solid black;
+            padding: 30px 0;
+            font-size: 22px;
+            text-align: left;
+            font-family: c4;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        a.mobileButtonTab {
+            color: black;
+        }
+        .mobileCustomerLogoTab.active {
+            border-top: 1px solid black;
+            margin: 30px 0;
+            width: 100%;
+            background-color: white;
+            border-bottom: 1px solid black;
+        }
+        .mobileCustomerLogoTab.active img {
+            width: 70%;
+        }
+        .footerNav {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        section#firstSection {
+            padding-top: 50px;
+            padding-bottom: 0px;
+            background-image: url(..//img/top_back.jpg);
+            background-size: cover;
+            background-position: 0 50%;
+            border-bottom: 4px solid #ff8400;
+        }
+        .owl-carousel.owl-theme.topSlider{
+            display: none;
+        }
+        .topBanner {
+            position: relative;
+        }
+        h3.formTitle {
+            font-size: 24px;
+            font-family: c4;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        p.formTxt {
+            font-family: c4;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        input.inputStyle {
+            display: block;
+            width: 100%;
+            height: 45px;
+            border: 2px solid black;
+            color: black;
+            padding: 0 10px;
+            font-size: 20px;
+            font-family: c4;
+            text-transform: uppercase;
+        }
+        p.formDescription {
+            text-align: center;
+            color: black;
+            font-size: 16px;
+        }
+        .formDescription a {
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: black;
+            font-size: 16px;
+        }
+        .submitButtonStyle {
+            width: 100%;
+            height: 45px;
+            background-color: #f39d3f;
+            border: none;
+            margin: 0 auto;
+            font-size: 20px;
+            font-family: c5;
+            font-weight: 600;
+            position: relative;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+            transition-property: all;
+        }
+    }
+    @media screen and (max-width: 740px) {
+        nav[role="custom-dropdown"] ul {
+            display: none;
+            height: 100%;
+        }
+        nav[role="custom-dropdown"] label {
+            position: relative;
+            display: block;
+            width: 100%;
+            min-height: 50px;
+            padding: 25px 0;
+            margin: 0;
+        }
+        nav[role="custom-dropdown"] label:after {
+            position: absolute;
+            right: .25em;
+            top: 3px;
+            content: "\2261";
+            font-size: 40px;
+        }
+        nav[role="custom-dropdown"] input[type=checkbox]:checked~label:after {
+            color: #222;
+        }
+        nav[role="custom-dropdown"] input[type=checkbox]:checked~ul {
+            display: block;
+        }
+        nav[role="custom-dropdown"] input[type=checkbox]:checked~ul>li {
+            width: 100%;
+            text-align: left;
+        }
+        nav[role="custom-dropdown"] input[type=checkbox]:checked~ul>li:after {
+            position: absolute;
+            right: .25em;
+            content: "\203A";
+            font: bold 1.4em sans-serif;
+        }
+        .navigation ul li:last-child:after {
+            color: white;
+        }
+        nav ul li:hover {
+            background-color: rgba(253, 192, 41, 0.55);
+        }
+        .navigation nav .fixContainer {
+            padding: 0;
+        }
+        a.menuLink {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
+            font-family: c4;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        .navigation nav ul li {
+            border-top: 2px solid black;
+        }
+        .navigation nav ul li:last-child {
+            border-bottom: 2px solid black;
+        }
+        a.menuLink:hover {
+            border: none;
+            padding-bottom: 10px;
+        }
+        section#errorPage {
+            height: auto;
+            padding-bottom: 10%;
+        }
+        .errorNumber {
+            font-family: c4;
+            font-size: 150px;
+            margin-bottom: 45px;
+            margin-top: 20%;
+        }
+    }
+    @media screen and (max-width: 380px) {
+
+        .telephoneBlockTop {
+            padding-top: 0;
+        }
+        .topContact {
+            min-height: 72px;
+            padding: 7px 0;
+        }
+        img.generalLogo {
+            width: 100%;
+            max-width: 120px;
+            padding-top: 10px;
+        }
+        .headerTel {
+            font-size: 19.2px;
+            font-family: c5;
+            color: black;
+            margin-bottom: 5px;
+        }
+        .telephoneBlockTop .generalButt {
+            background-color: #ff8400;
+            width: 140px;
+            float: none;
+            color: white;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 3px 0px;
+            font-family: c4;
+            text-align: center;
+        }
+        .popup-containerM img {
+            max-width: 160px;
+        }
+        .popup-contentM a img {
+            height: 55vh;
+            width: auto;
+            margin-top: 20vh;
+            position: relative;
+            z-index: 20;
+        }
+        a.mobileButtonTab {
+            padding-left: 0px;
+        }
+        #Slider .arrow.prev {
+            left: -20px;
+            top: 88px;
+        }
+        #Slider .arrow.next {
+            right: -25px;
+            top: 88px;
+        }
+        #Slider .item img {
+            width: 100%;
+            height: auto;
+            max-width: 228px;
+        }
+        nav#myNavBar {
+            background-color: #eee;
+            padding: 10px 0;
+            margin-bottom: 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        h2.bigTitle {
+            font-size: 20px;
+            margin: 35px 0;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.65);
+        }
+        section#errorPage {
+            height: auto;
+            padding-bottom: 10%;
+        }
+        .errorNumber {
+            font-family: c4;
+            font-size: 150px;
+            margin-bottom: 45px;
+            margin-top: 20%;
+        }
+        p.errorDescription {
+            font-size: 30px;
+            font-family: c3;
+            margin: 0;
+        }
+    }
